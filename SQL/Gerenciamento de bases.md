@@ -1,4 +1,4 @@
-# Documentação SQL: Gerenciamento de Banco de Dados 
+# Gerenciamento de Banco de Dados 
 
   
 
