@@ -345,6 +345,53 @@ Isso evita problemas em logs, parsing e libs.
 
 ---
 
+## 10) Usuários no PowerShell, WSL e Docker
+
+Cada ambiente tem seu **próprio usuário**:
+
+* **PowerShell** → usuário do **Windows**
+* **WSL** → usuário **Linux da distro**
+* **Docker** → usuário **dentro do container**
+
+Mesmo que tenham o mesmo nome, **não são a mesma identidade**.
+
+### Comandos para descobrir o usuário
+
+#### PowerShell
+
+```powershell
+whoami
+$env:USERNAME
+```
+
+#### WSL / Linux
+
+```bash
+whoami
+id
+echo $USER
+```
+
+#### Docker
+
+```bash
+docker exec -it <container> whoami
+docker exec -it <container> id
+docker inspect <container> --format '{{.Config.User}}'
+```
+
+### Regra prática
+
+Se houver erro de permissão, pergunte primeiro:
+
+* é permissão do **Windows**?
+* do **WSL/Linux**?
+* ou do **container**?
+
+Isso evita grande parte da confusão no uso conjunto de PowerShell, WSL e Docker.
+
+---
+
 ## Erros comuns no dia a dia (e como evitar)
 
 * ❌ Trabalhar em projetos grandes dentro de `/mnt/c`
