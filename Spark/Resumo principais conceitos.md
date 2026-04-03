@@ -28,7 +28,7 @@ O **Driver** é o processo central da aplicação Spark.
 
 Um **Cluster** é o conjunto de recursos computacionais usados pelo Spark.
 
-## ⚙️ Explicação avançada
+## Explicação avançada
 
 * Composto por:
 
@@ -51,7 +51,7 @@ Um **Cluster** é o conjunto de recursos computacionais usados pelo Spark.
 
 O **Executor** é o componente que executa as tarefas distribuídas.
 
-## ⚙️ Explicação avançada
+## Explicação avançada
 
 * Roda dentro de cada nó worker
 * Responsável por:
@@ -72,7 +72,7 @@ O **Executor** é o componente que executa as tarefas distribuídas.
 
 Um **Nó** é uma unidade computacional do cluster.
 
-## ⚙️ Explicação avançada
+## Explicação avançada
 
 * Pode ser:
 
@@ -92,7 +92,7 @@ Um **Nó** é uma unidade computacional do cluster.
 
 Um **Container** é um ambiente isolado que executa processos.
 
-## ⚙️ Explicação avançada
+## Explicação avançada
 
 * Criado via Docker
 * Contém:
