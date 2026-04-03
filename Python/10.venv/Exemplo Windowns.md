@@ -24,7 +24,7 @@ Installed Pythons:
 py -3.10 -m venv venv
 ```
 
-📌 Isso garante que o ambiente será criado com Python 3.10
+Isso garante que o ambiente será criado com Python 3.10
 
 ---
 

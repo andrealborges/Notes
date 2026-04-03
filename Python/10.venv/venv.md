@@ -209,7 +209,7 @@ project/
 └── README.md
 ```
 
-# 10. 📊 Checklist de Criação de Ambiente
+# 10. Checklist de Criação de Ambiente
 
 * [ ] Criar ambiente virtual
 * [ ] Definir versão do Python
